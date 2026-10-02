@@ -1,0 +1,58 @@
+{
+  "Java": {
+    "bytes": 240000000,
+    "percentage": 24.0
+  },
+  "TypeScript": {
+    "bytes": 180000000,
+    "percentage": 18.0
+  },
+  "Python": {
+    "bytes": 160000000,
+    "percentage": 16.0
+  },
+  "JavaScript": {
+    "bytes": 120000000,
+    "percentage": 12.0
+  },
+  "HTML": {
+    "bytes": 90000000,
+    "percentage": 9.0
+  },
+  "C++": {
+    "bytes": 70000000,
+    "percentage": 7.0
+  },
+  "C#": {
+    "bytes": 60000000,
+    "percentage": 6.0
+  },
+  "CSS": {
+    "bytes": 40000000,
+    "percentage": 4.0
+  },
+  "Go": {
+    "bytes": 20000000,
+    "percentage": 2.0
+  },
+  "Ruby": {
+    "bytes": 8000000,
+    "percentage": 0.8
+  },
+  "PHP": {
+    "bytes": 6000000,
+    "percentage": 0.6
+  },
+  "Rust": {
+    "bytes": 4000000,
+    "percentage": 0.4
+  },
+  "Kotlin": {
+    "bytes": 1500000,
+    "percentage": 0.15
+  },
+  "Shell": {
+    "bytes": 500000,
+    "percentage": 0.05
+  }
+}

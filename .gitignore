@@ -1,0 +1,13 @@
+# Customer & local sizing artifacts (never commit real customer data)
+customer_languages.json
+*customer*
+SIZING_REPORT.md
+sizing_breakdown.csv
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.env
