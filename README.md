@@ -8,8 +8,8 @@ A standalone Python CLI utility that estimates **Lines of Code (LOC)**, **Small 
 
 - **Bytes-to-LOC Conversion:** Converts raw byte counts per programming language into estimated Lines of Code (defaults to industry-standard `40 bytes/LOC`, configurable via `--bytes-per-loc`).
 - **Multi-Tier Language Filtering:**
-  1. **CodeMender Core Application Languages:** `C`, `C++`, `C#`, `Visual Basic .NET`, `F#`, `Go`, `Java`, `JavaScript`, `TypeScript`, `Kotlin`, `Vue`, `Python`, `Cython`, `Ruby`, `Rust`, `PHP`.
-  2. **CodeMender Core + Supported Web/Enterprise Frameworks:** Adds `HTML`, `CSS`, `SCSS`, `Less`, `ASP.NET`, and common template engines (`Jinja`, `FreeMarker`, `Handlebars`, `EJS`, `Pug`, `Smarty`, `Haml`).
+  1. **CodeMender Core Application Languages:** `C`, `C++`, `C#`, `Go`, `Java`, `JavaScript`, `TypeScript`, `Kotlin`, `Python`, `Ruby`, `Rust`, `PHP`.
+  2. **CodeMender Core + Supported Web/Enterprise Frameworks:** Adds `HTML`, `CSS`, and `ASP.NET`.
   3. **All Core Source Code:** Excludes non-application markup, documents, and notebooks (`HTML`, `CSS`, `Rich Text Format`, `Jupyter Notebook`, `XSLT`, etc.).
   4. **Unfiltered Fleet:** Includes all entries in the input JSON.
 - **Language Volume Tiering:** Classifies each language bucket into:

@@ -23,16 +23,12 @@ CORE_SUPPORTED_LANGUAGES = {
     "C",
     "C++",
     "C#",
-    "Visual Basic .NET",
-    "F#",
     "Go",
     "Java",
     "JavaScript",
     "TypeScript",
     "Kotlin",
-    "Vue",
     "Python",
-    "Cython",
     "Ruby",
     "Rust",
     "PHP",
@@ -42,16 +38,7 @@ CORE_SUPPORTED_LANGUAGES = {
 FRAMEWORK_WEB_LANGUAGES = {
     "HTML",
     "CSS",
-    "SCSS",
-    "Less",
     "ASP.NET",
-    "Jinja",
-    "FreeMarker",
-    "Handlebars",
-    "EJS",
-    "Pug",
-    "Smarty",
-    "Haml",
 }
 
 # Non-application / Data / Markup / Notebook formats excluded in the "Core Source Code" view
