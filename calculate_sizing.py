@@ -19,26 +19,24 @@ from typing import Any
 DEFAULT_BYTES_PER_LOC = 40  # Industry standard average (~40 bytes per line of code)
 
 # CodeMender Default Supported Core Application Languages
+# Languages: C/C++, Java, Python, TypeScript/JavaScript, Go, Rust, and Ruby
 CORE_SUPPORTED_LANGUAGES = {
     "C",
     "C++",
-    "C#",
-    "Go",
     "Java",
-    "JavaScript",
-    "TypeScript",
-    "Kotlin",
     "Python",
-    "Ruby",
+    "TypeScript",
+    "JavaScript",
+    "Go",
     "Rust",
-    "PHP",
+    "Ruby",
 }
 
 # CodeMender Supported Enterprise Framework / Web / Markup Languages
+# Frameworks: HTML/CSS, Django, Flask, React, Spring Boot, and Express
 FRAMEWORK_WEB_LANGUAGES = {
     "HTML",
     "CSS",
-    "ASP.NET",
 }
 
 # Non-application / Data / Markup / Notebook formats excluded in the "Core Source Code" view
@@ -269,7 +267,7 @@ def main() -> None:
     combined_scans = args.full_scans + args.diff_scans
     for label, loc_val in [
         ("Option A: CodeMender Core Application Languages (Excl. HTML/CSS)", cm_core_loc),
-        ("Option B: CodeMender Core + Enterprise Web Frameworks (Incl. HTML/CSS/ASP.NET)", cm_full_loc),
+        ("Option B: CodeMender Core + Enterprise Web Frameworks (Incl. HTML/CSS)", cm_full_loc),
         ("Option C: All Core Source Code Languages (Non-markup languages)", all_source_loc),
         ("Option D: Entire Unfiltered Fleet (All entries)", total_loc),
     ]:

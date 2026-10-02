@@ -4,12 +4,19 @@ A standalone Python CLI utility that estimates **Lines of Code (LOC)**, **Small 
 
 ---
 
+## Supported Languages & Frameworks
+
+- **Languages:** `C` / `C++`, `Java`, `Python`, `TypeScript` / `JavaScript`, `Go`, `Rust`, and `Ruby`
+- **Frameworks:** Broad support for standard libraries within these languages, as well as common enterprise frameworks (`HTML` / `CSS`, Django, Flask, React, Spring Boot, and Express)
+
+---
+
 ## Features
 
 - **Bytes-to-LOC Conversion:** Converts raw byte counts per programming language into estimated Lines of Code (defaults to industry-standard `40 bytes/LOC`, configurable via `--bytes-per-loc`).
 - **Multi-Tier Language Filtering:**
-  1. **CodeMender Core Application Languages:** `C`, `C++`, `C#`, `Go`, `Java`, `JavaScript`, `TypeScript`, `Kotlin`, `Python`, `Ruby`, `Rust`, `PHP`.
-  2. **CodeMender Core + Supported Web/Enterprise Frameworks:** Adds `HTML`, `CSS`, and `ASP.NET`.
+  1. **CodeMender Core Application Languages:** `C`, `C++`, `Java`, `Python`, `TypeScript`, `JavaScript`, `Go`, `Rust`, `Ruby`.
+  2. **CodeMender Core + Supported Web/Enterprise Frameworks:** Adds `HTML` and `CSS` (alongside framework code in Django, Flask, React, Spring Boot, and Express).
   3. **All Core Source Code:** Excludes non-application markup, documents, and notebooks (`HTML`, `CSS`, `Rich Text Format`, `Jupyter Notebook`, `XSLT`, etc.).
   4. **Unfiltered Fleet:** Includes all entries in the input JSON.
 - **Language Volume Tiering:** Classifies each language bucket into:
@@ -104,12 +111,12 @@ Scan cadence: 1 Full Scan(s)/mo + 30 Diff Scan(s)/mo (31 total scans/mo)
 
 Total Unfiltered Fleet (14 langs): 1,000,000,000 bytes | 25,000,000 LOC
 All Core Source Code (excl. Markup/Data/Notebooks, 12 langs): 870,000,000 bytes | 21,750,000 LOC
-CodeMender Core Supported Languages (11 langs): 869,500,000 bytes | 21,737,500 LOC
-CodeMender Core + Web Frameworks (13 langs): 999,500,000 bytes | 24,987,500 LOC
+CodeMender Core Supported Languages (8 langs): 802,000,000 bytes | 20,050,000 LOC
+CodeMender Core + Web Frameworks (10 langs): 932,000,000 bytes | 23,300,000 LOC
 
-=== Option A: CodeMender Core Application Languages (Excl. HTML/CSS) (21,737,500 LOC) ===
-  SMALL :  290 repos (LOC share:   4,347,500) | Full Scans/mo (1x) =   290 | Diff Scans/mo (30x) =  8,700 | Total Scans/mo (31x) =  8,990
-  MEDIUM:   77 repos (LOC share:   7,608,125) | Full Scans/mo (1x) =    77 | Diff Scans/mo (30x) =  2,310 | Total Scans/mo (31x) =  2,387
-  LARGE :   20 repos (LOC share:   9,781,875) | Full Scans/mo (1x) =    20 | Diff Scans/mo (30x) =    600 | Total Scans/mo (31x) =    620
-  TOTAL REPOS: 387
+=== Option A: CodeMender Core Application Languages (Excl. HTML/CSS) (20,050,000 LOC) ===
+  SMALL :  268 repos (LOC share:   4,010,000) | Full Scans/mo (1x) =   268 | Diff Scans/mo (30x) =  8,040 | Total Scans/mo (31x) =  8,308
+  MEDIUM:   71 repos (LOC share:   7,017,500) | Full Scans/mo (1x) =    71 | Diff Scans/mo (30x) =  2,130 | Total Scans/mo (31x) =  2,201
+  LARGE :   19 repos (LOC share:   9,022,500) | Full Scans/mo (1x) =    19 | Diff Scans/mo (30x) =    570 | Total Scans/mo (31x) =    589
+  TOTAL REPOS: 358
 ```
